@@ -24,24 +24,107 @@
     <title>Document</title>
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer class="footer p-16 mt-24 bg-black text-white">
+    <header class="md:container md:mx-auto">
+      <nav>
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Pages</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Contact</a></li>
+              </ul>
+            </div>
+            <a class="text-4xl whitespace-nowrap font-extrabold tracking-tight">
+              Spider<span class="text-red-500">&#39;</span>s
+            </a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 font-normal text-base">
+              <li><a href="" class="text-red-500 font-bold">Home</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Pages</a></li>
+              <li><a href="">Blog</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              class="hidden sm:block"
+            >
+              <g clip-path="url(#clip0_5_6)">
+                <path
+                  d="M3 10C3 10.9193 3.18106 11.8295 3.53284 12.6788C3.88463 13.5281 4.40024 14.2997 5.05025 14.9497C5.70026 15.5998 6.47194 16.1154 7.32122 16.4672C8.1705 16.8189 9.08075 17 10 17C10.9193 17 11.8295 16.8189 12.6788 16.4672C13.5281 16.1154 14.2997 15.5998 14.9497 14.9497C15.5998 14.2997 16.1154 13.5281 16.4672 12.6788C16.8189 11.8295 17 10.9193 17 10C17 9.08075 16.8189 8.1705 16.4672 7.32122C16.1154 6.47194 15.5998 5.70026 14.9497 5.05025C14.2997 4.40024 13.5281 3.88463 12.6788 3.53284C11.8295 3.18106 10.9193 3 10 3C9.08075 3 8.1705 3.18106 7.32122 3.53284C6.47194 3.88463 5.70026 4.40024 5.05025 5.05025C4.40024 5.70026 3.88463 6.47194 3.53284 7.32122C3.18106 8.1705 3 9.08075 3 10Z"
+                  stroke="#89898B"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M21 21L15 15"
+                  stroke="#89898B"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_5_6">
+                  <rect width="24" height="24" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            <a class="btn btn-error ml-6 text-white">Get Ticket</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="md:container md:mx-auto"></main>
+    <footer class="footer p-8 sm:p-16 mt-8 sm:mt-24 bg-black text-white">
       <!-- Contact Info -->
-      <aside class="flex items-center mb-6 gap-7">
+      <aside class="flex flex-col sm:flex-row items-center mb-6 gap-7">
         <a href=""
           ><img class="h-20 w-24" src="/Images/newlogo1.png" alt=""
         /></a>
 
         <div class="flex flex-col">
-          <!-- Added flex and flex-col classes -->
-          <h3 class="text-2xl font-extrabold">Get In Touch</h3>
-          <p class="mt-3 text-base font-medium text-white text-opacity-60">
+          <h3 class="text-lg text-left sm:text-2xl font-extrabold">
+            Get In Touch
+          </h3>
+          <p
+            class="mt-2 text-left sm:mt-3 text-base font-medium text-white text-opacity-60"
+          >
             Dit amet consectetur. Condimentum<br />adipiscing aliquam turpis
-            placerat dolor. Purus <br />
+            placerat dolor. Purus<br />
             urna in sit nullam proin.
           </p>
-          <div class="mt-6 flex items-center gap-3">
+          <div class="mt-3 sm:mt-6 flex flex-row sm:flex-row gap-3">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -59,7 +142,9 @@
             </svg>
             <p class="text-white text-opacity-60">hockeys@support.com</p>
           </div>
-          <div class="flex items-center gap-3 mt-3">
+          <div
+            class="mt-2 sm:mt-3 flex flex-row sm:flex-row items-center gap-3"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -83,29 +168,64 @@
       <!-- Navigation -->
 
       <!-- Services -->
-      <div>
-        <header class="mb-4 text-lg font-bold text-white">Services</header>
-        <a class="link link-hover text-white text-opacity-60">Branding</a>
-        <a class="link link-hover text-white text-opacity-60">Design</a>
-        <a class="link link-hover text-white text-opacity-60">Marketing</a>
-        <a class="link link-hover text-white text-opacity-60">Advertisement</a>
+      <div class="mb-4 sm:mb-0 flex flex-col">
+        <header class="text-lg sm:text-xl font-bold text-white">
+          Services
+        </header>
+        <a
+          class="block sm:inline-block link link-hover text-white text-opacity-60"
+          >Branding</a
+        >
+        <a
+          class="block sm:inline-block link link-hover text-white text-opacity-60"
+          >Design</a
+        >
+        <a
+          class="block sm:inline-block link link-hover text-white text-opacity-60"
+          >Marketing</a
+        >
+        <a
+          class="block sm:inline-block link link-hover text-white text-opacity-60"
+          >Advertisement</a
+        >
       </div>
 
       <!-- Company -->
-      <div>
-        <header class="mb-4 text-lg font-bold text-white">Company</header>
-        <a class="link link-hover text-white text-opacity-60">About us</a>
-        <a class="link link-hover text-white text-opacity-60">Contact</a>
-        <a class="link link-hover text-white text-opacity-60">Jobs</a>
-        <a class="link link-hover text-white text-opacity-60">Press kit</a>
+      <div class="flex flex-col mb-4 sm:mb-0">
+        <header class="text-lg sm:text-xl font-bold text-white">Company</header>
+        <a
+          class="block sm:inline-block link link-hover text-white text-opacity-60"
+          >About us</a
+        >
+        <a
+          class="block sm:inline-block link link-hover text-white text-opacity-60"
+          >Contact</a
+        >
+        <a
+          class="block sm:inline-block link link-hover text-white text-opacity-60"
+          >Jobs</a
+        >
+        <a
+          class="block sm:inline-block link link-hover text-white text-opacity-60"
+          >Press kit</a
+        >
       </div>
 
       <!-- Legal -->
-      <div>
-        <header class="mb-4 text-lg font-bold text-white">Legal</header>
-        <a class="link link-hover text-white text-opacity-60">Terms of use</a>
-        <a class="link link-hover text-white text-opacity-60">Privacy policy</a>
-        <a class="link link-hover text-white text-opacity-60">Cookie policy</a>
+      <div class="flex flex-col">
+        <header class="text-lg sm:text-xl font-bold text-white">Legal</header>
+        <a
+          class="block sm:inline-block link link-hover text-white text-opacity-60"
+          >Terms of use</a
+        >
+        <a
+          class="block sm:inline-block link link-hover text-white text-opacity-60"
+          >Privacy policy</a
+        >
+        <a
+          class="block sm:inline-block link link-hover text-white text-opacity-60"
+          >Cookie policy</a
+        >
       </div>
     </footer>
   </body>
