@@ -20,11 +20,24 @@
         font-family: "Manrope", sans-serif;
       }
     </style>
+    <!-- custom styles tailwind  -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              komola: "#FF4240",
+            },
+          },
+        },
+      };
+    </script>
 
     <title>Document</title>
   </head>
   <body>
-    <header class="md:container md:mx-auto">
+    <header class="md:mx-auto lg:ml-32 lg:mr-32 lg:mt-12">
       <nav>
         <div class="navbar bg-base-100">
           <div class="navbar-start">
@@ -56,8 +69,8 @@
                 <li><a href="">Contact</a></li>
               </ul>
             </div>
-            <a class="text-4xl whitespace-nowrap font-extrabold tracking-tight">
-              Spider<span class="text-red-500">&#39;</span>s
+            <a href="" class="text-4xl whitespace-nowrap font-extrabold">
+              Spider<span class="text-red-500">&apos;</span>s
             </a>
           </div>
           <div class="navbar-center hidden lg:flex">
@@ -105,9 +118,9 @@
         </div>
       </nav>
       <!-- slider or carousel -->
-      <div class="carousel w-fit">
+      <div class="carousel mt-6 lg:mt-14 sm:mt-6">
         <div id="slide1" class="carousel-item relative w-full">
-          <img src="/Images/banner.png" class="w-full" />
+          <img src="/Images/banner.png" class="w-full rounded-2xl" />
           <div
             class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
           >
@@ -116,7 +129,7 @@
           </div>
         </div>
         <div id="slide2" class="carousel-item relative w-full">
-          <img src="/Images/banner2.png" class="w-full" />
+          <img src="/Images/banner2.png" class="w-full rounded-2xl" />
           <div
             class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
           >
@@ -125,7 +138,7 @@
           </div>
         </div>
         <div id="slide3" class="carousel-item relative w-full">
-          <img src="/Images/banner3.png" class="w-full" />
+          <img src="/Images/banner3.png" class="w-full rounded-2xl" />
           <div
             class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
           >
@@ -135,7 +148,92 @@
         </div>
       </div>
     </header>
-    <main class="md:container md:mx-auto"></main>
+    <main class="md:mx-auto lg:ml-32 lg:mr-32">
+      <!-- pro hockey club section  -->
+      <section class="mt-24 lg:mx-auto lg:mb-14 mx-2.5 mb-6">
+        <div
+          class="text-center py-8 border-y-4 border-dashed border-[#13131820] mb-12"
+        >
+          <h1
+            class="font-extrabold lg:text-3xl lg:mb-6 mb-4 text-2xl text-[#131318]"
+          >
+            Professional Hockeys Club
+          </h1>
+          <p class="text-[#131318] text-base lg:w-152 w-73">
+            We are one of the best professional hockey club of the town. We
+            <br />
+            train our players to make them tough,smart and worthy.
+          </p>
+        </div>
+        <!-- success rate  -->
+        <div
+          class="flex lg:flex-row flex-col gap-8 items-center justify-center"
+        >
+          <!-- 1st  -->
+          <div class="max-w-62 flex flex-col w-60 items-center">
+            <div
+              class="mb-6 radial-progress text-komola"
+              style="--value: 87"
+              role="progressbar"
+            >
+              <span class="font-7 text-[#131318] font-extrabold">87%</span>
+            </div>
+            <h1 class="mb-4 font-bold font-5 text-[#131318]">
+              Player Facility
+            </h1>
+            <p class="font-normal font-4 text-[#13131860] text-center">
+              We provide the best facilities for the players
+            </p>
+          </div>
+          <!-- 2nd  -->
+          <div class="max-w-62 flex flex-col w-60 items-center">
+            <div
+              class="mb-6 radial-progress text-[#49D293]"
+              style="--value: 95"
+              role="progressbar"
+            >
+              <span class="font-7 text-[#131318] font-extrabold">95%</span>
+            </div>
+            <h1 class="mb-4 font-bold font-5 text-[#131318]">
+              Experienced Coach
+            </h1>
+            <p class="font-normal font-4 text-[#13131860] text-center">
+              We have the best coaches to train the best players
+            </p>
+          </div>
+          <!-- 3rd  -->
+          <div class="max-w-62 flex flex-col w-60 items-center">
+            <div
+              class="mb-6 radial-progress text-[#fbbf24]"
+              style="--value: 90"
+              role="progressbar"
+            >
+              <span class="font-7 text-[#131318] font-extrabold">90%</span>
+            </div>
+            <h1 class="mb-4 font-bold font-5 text-[#131318]">Senior Player</h1>
+            <p class="font-normal font-4 text-[#13131860] text-center">
+              Senior players in the club are always teaching the youngsters
+            </p>
+          </div>
+          <!-- 4th  -->
+          <div class="max-w-62 flex flex-col w-60 items-center">
+            <div
+              class="mb-6 radial-progress text-[#4C8DF1]"
+              style="--value: 80"
+              role="progressbar"
+            >
+              <span class="font-7 text-[#131318] font-extrabold">80%</span>
+            </div>
+            <h1 class="mb-4 font-bold font-5 text-[#131318]">
+              Training Ground
+            </h1>
+            <p class="font-normal font-4 text-[#13131860] text-center">
+              Highly maintained training ground with huge facilities
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer class="footer p-8 sm:p-16 mt-8 sm:mt-24 bg-black text-white">
       <!-- Contact Info -->
       <aside class="flex flex-col sm:flex-row items-center mb-6 gap-7">
