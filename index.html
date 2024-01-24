@@ -256,9 +256,7 @@
           </p>
         </div>
         <div class="grid grid-cols-1 gap-6 lg:grid-cols-2">
-          <div
-            class="card bg-base-100 shadow-none bg-base-100 bg-opacity-0 image-full relative w-full"
-          >
+          <div class="card shadow-none opacity-100 image-full relative w-full">
             <figure><img src="/Images/prog1.png" alt="Shoes" /></figure>
             <div class="card-body">
               <h2 class="card-title mt-14 font-extrabold text-2xl text-white">
@@ -454,7 +452,7 @@
         <div class="grid grid-cols-[1fr,2fr] max-[450px]:grid-cols-1">
           <!-- left -->
           <div
-            class="flex flex-col border border-solid p-10 max-[450px]:p-6 rounded-lg border-gray-200 mb-6"
+            class="flex flex-col border border-solid p-10 max-[450px]:p-6 rounded-lg border-gray-200"
           >
             <div
               class="bg-green-50 border rounded mb-4 w-[374px] max-[450px]:w-full max-[450px]:184px"
@@ -462,7 +460,7 @@
               <div class="p-8">
                 <img class="mb-6" src="./Images/icon1.png" alt="icon" />
                 <p>Phone Number:</p>
-                <span class="font-bold text-black">hockeys@support.com</span>
+                <span class="font-bold text-black"> (+62) 123-321-543</span>
               </div>
             </div>
             <div
@@ -470,7 +468,7 @@
             >
               <div class="p-8">
                 <img class="mb-6" src="./Images/icon2.png" alt="icon" />
-                <p>Phone Number:</p>
+                <p>Email:</p>
                 <span class="font-bold text-black">hockeys@support.com</span>
               </div>
             </div>
@@ -479,8 +477,10 @@
             >
               <div class="p-8">
                 <img class="mb-6" src="./Images/icon3.png" alt="icon" />
-                <p>Phone Number:</p>
-                <span class="font-bold text-black">hockeys@support.com</span>
+                <p>Location:</p>
+                <span class="font-bold text-black"
+                  >152/1 Mohakhali Wireless Gate</span
+                >
               </div>
             </div>
           </div>
@@ -489,7 +489,7 @@
             <div class="lg:grid lg:grid-cols-2 gap-4">
               <!-- First Row -->
               <div class="col-span-1 mb-2">
-                <label for="name" class="block text-sm font-bold text-black"
+                <label for="name" class="font-bold text-xl text-center"
                   >Your Name</label
                 >
                 <input
@@ -497,11 +497,11 @@
                   id="name"
                   name="name"
                   placeholder="Enter your full name"
-                  class="mt-1 p-2 w-full border rounded-md"
+                  class="mt-1 p-2 w-full border rounded-md outline-none bg-gray-100 lg:p-4"
                 />
               </div>
               <div class="col-span-1 mb-2">
-                <label for="email" class="block text-sm font-bold text-black"
+                <label for="email" class="font-bold text-xl text-center"
                   >Your Email</label
                 >
                 <input
@@ -509,13 +509,13 @@
                   id="email"
                   name="email"
                   placeholder="Enter your email"
-                  class="mt-1 p-2 w-full border rounded-md"
+                  class="mt-1 p-2 w-full border rounded-md outline-none bg-gray-100 lg:p-4"
                 />
               </div>
 
               <!-- Second Row -->
               <div class="col-span-1 mb-2">
-                <label for="subject" class="block text-sm font-bold text-black"
+                <label for="subject" class="font-bold text-xl text-center"
                   >Subject</label
                 >
                 <input
@@ -523,11 +523,11 @@
                   id="subject"
                   name="subject"
                   placeholder="Enter your subject"
-                  class="mt-1 p-2 w-full border rounded-md"
+                  class="mt-1 p-2 w-full border rounded-md outline-none bg-gray-100 lg:p-4"
                 />
               </div>
               <div class="col-span-1 mb-2">
-                <label for="phone" class="block text-sm font-bold text-black"
+                <label for="phone" class="font-bold text-xl text-center"
                   >Phone Number</label
                 >
                 <input
@@ -535,13 +535,13 @@
                   id="phone"
                   name="phone"
                   placeholder="Enter your phone number"
-                  class="mt-1 p-2 w-full border rounded-md"
+                  class="mt-1 p-2 w-full border rounded-md outline-none bg-gray-100 lg:p-4"
                 />
               </div>
 
               <!-- Message Field (Spanning both columns) -->
               <div class="col-span-2 mb-8 lg:h-[400px]">
-                <label for="message" class="block text-sm font-bold text-black"
+                <label for="message" class="font-bold text-xl text-center"
                   >Message</label
                 >
                 <textarea
@@ -549,7 +549,7 @@
                   name="message"
                   rows="4"
                   placeholder="Write your message"
-                  class="mt-1 p-2 w-full h-full border rounded-md"
+                  class="mt-1 p-2 w-full h-full border rounded-md outline-none bg-gray-100 lg:pt-4 lg:pl-4"
                 ></textarea>
               </div>
             </div>
