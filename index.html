@@ -26,7 +26,6 @@
         theme: {
           extend: {
             colors: {
-              clifford: "#da373d",
               komola: "#FF4240",
             },
           },
@@ -62,7 +61,7 @@
                 tabindex="0"
                 class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
               >
-                <li><a href="">Home</a></li>
+                <li><a href="" class="text-red-500 font-bold">Home</a></li>
                 <li><a href="">About</a></li>
                 <li><a href="">Pages</a></li>
                 <li><a href="">Blog</a></li>
@@ -152,14 +151,14 @@
       <!-- pro hockey club section  -->
       <section class="mt-24 lg:mx-auto lg:mb-14 mx-2.5 mb-6">
         <div
-          class="text-center py-8 border-y-4 border-dashed border-[#13131820] mb-12"
+          class="text-center py-8 border-y-2 border-dashed border-[#13131820] mb-12"
         >
           <h1
             class="font-extrabold lg:text-3xl lg:mb-6 mb-4 text-2xl text-[#131318]"
           >
             Professional Hockeys Club
           </h1>
-          <p class="text-[#131318] text-base lg:w-152 w-73">
+          <p class="text-gray-800 bg-opacity-60 text-base lg:w-152 w-73">
             We are one of the best professional hockey club of the town. We
             <br />
             train our players to make them tough,smart and worthy.
@@ -233,6 +232,8 @@
           </div>
         </div>
       </section>
+      <!-- Program Sections -->
+      <section></section>
     </main>
     <footer class="footer p-8 sm:p-16 mt-8 sm:mt-24 bg-black text-white">
       <!-- Contact Info -->
@@ -241,12 +242,12 @@
           ><img class="h-20 w-24" src="/Images/newlogo1.png" alt=""
         /></a>
 
-        <div class="flex flex-col">
+        <div class="flex flex-col max-[450px]:items-center">
           <h3 class="text-lg text-left sm:text-2xl font-extrabold">
             Get In Touch
           </h3>
           <p
-            class="mt-2 text-left sm:mt-3 text-base font-medium text-white text-opacity-60"
+            class="mt-2 text-left sm:mt-3 text-base font-medium text-white text-opacity-60 max-[450px]:text-center"
           >
             Dit amet consectetur. Condimentum<br />adipiscing aliquam turpis
             placerat dolor. Purus<br />
@@ -295,55 +296,59 @@
 
       <!-- Navigation -->
 
-      <!-- Services -->
-      <div class="mb-4 sm:mb-0 flex flex-col">
-        <header class="text-lg sm:text-xl font-bold text-white">
-          Services
-        </header>
-        <a
-          class="block sm:inline-block link link-hover text-white text-opacity-60"
-          >Branding</a
-        >
-        <a
-          class="block sm:inline-block link link-hover text-white text-opacity-60"
-          >Design</a
-        >
-        <a
-          class="block sm:inline-block link link-hover text-white text-opacity-60"
-          >Marketing</a
-        >
-        <a
-          class="block sm:inline-block link link-hover text-white text-opacity-60"
-          >Advertisement</a
-        >
-      </div>
+      <div class="flex gap-24 max-[450px]:flex max-[450px]:gap-16 mx-auto">
+        <!-- Services -->
+        <div class="mb-4 flex flex-col max-[450px]:items-center">
+          <header class="text-lg sm:text-xl font-bold text-white">
+            Services
+          </header>
+          <a
+            class="mt-7 block sm:inline-block link link-hover text-white text-opacity-60"
+            >Branding</a
+          >
+          <a
+            class="block sm:inline-block link link-hover text-white text-opacity-60"
+            >Design</a
+          >
+          <a
+            class="block sm:inline-block link link-hover text-white text-opacity-60"
+            >Marketing</a
+          >
+          <a
+            class="block sm:inline-block link link-hover text-white text-opacity-60"
+            >Advertisement</a
+          >
+        </div>
 
-      <!-- Company -->
-      <div class="flex flex-col mb-4 sm:mb-0">
-        <header class="text-lg sm:text-xl font-bold text-white">Company</header>
-        <a
-          class="block sm:inline-block link link-hover text-white text-opacity-60"
-          >About us</a
-        >
-        <a
-          class="block sm:inline-block link link-hover text-white text-opacity-60"
-          >Contact</a
-        >
-        <a
-          class="block sm:inline-block link link-hover text-white text-opacity-60"
-          >Jobs</a
-        >
-        <a
-          class="block sm:inline-block link link-hover text-white text-opacity-60"
-          >Press kit</a
-        >
+        <!-- Company -->
+        <div class="flex flex-col mb-4 sm:mb-0 max-[450px]:items-center">
+          <header class="text-lg sm:text-xl font-bold text-white">
+            Company
+          </header>
+          <a
+            class="mt-7 block sm:inline-block link link-hover text-white text-opacity-60"
+            >About us</a
+          >
+          <a
+            class="block sm:inline-block link link-hover text-white text-opacity-60"
+            >Contact</a
+          >
+          <a
+            class="block sm:inline-block link link-hover text-white text-opacity-60"
+            >Jobs</a
+          >
+          <a
+            class="block sm:inline-block link link-hover text-white text-opacity-60"
+            >Press kit</a
+          >
+        </div>
       </div>
 
       <!-- Legal -->
-      <div class="flex flex-col">
+      <div class="flex flex-col mx-auto max-[450px]:items-center">
         <header class="text-lg sm:text-xl font-bold text-white">Legal</header>
         <a
-          class="block sm:inline-block link link-hover text-white text-opacity-60"
+          class="mt-7 block sm:inline-block link link-hover text-white text-opacity-60"
           >Terms of use</a
         >
         <a
